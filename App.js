@@ -1,18 +1,11 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import RootNavigator from './src/navigation/RootNavigator';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <Text>Science</Text>
+    <SafeAreaView style={{flex: 1}}>
+      <RootNavigator />
     </SafeAreaView>
   );
 };
