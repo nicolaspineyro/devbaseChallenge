@@ -6,6 +6,12 @@ const options = {
     headerShown: false,
     gestureEnabled: false,
   },
+  colorBlack: {
+    headerStyle: {
+      backgroundColor: 'black',
+    },
+    headerTintColor: 'white',
+  },
 };
 
 export const routeNames = {
@@ -17,9 +23,11 @@ export const appRoutes = [
   {
     name: routeNames.Person,
     component: PersonScreen,
+    options: options.colorBlack,
   },
   {
     name: routeNames.Home,
     component: HomeScreen,
+    options: options.colorBlack,
   },
 ];
